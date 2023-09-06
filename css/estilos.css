@@ -1,8 +1,111 @@
-h1 {
+
+
+
+/* selector universal */
+
+/* *{
+    border: 1px dashed blue;
+}
+ */
+
+
+/* h1 {
     border: 10px dotted gold;
     border-radius: 50px;
     background-color: darkslateblue;
     text-align: center;
     box-shadow: 5px 5px salmon;
     font-size: 200px;
+} */
+
+
+/* selector x id */
+/* #link1 {
+    font-size: 20px;
+}
+
+#link6 {
+    background-color: darkslateblue;
+} */
+
+/* selector x clase */
+/* .rojo {
+    background-color: darkmagenta;
+    border: 5px groove goldenrod;
+    border-radius: 5px;
+}
+
+.verde{
+    background-color: brown;
+    border: 5px inset greenyellow;
+} */
+
+/* selector por clase en tag particular */
+/* h1.verde{
+    font-size: 50px;
+} */
+
+/* buscar por atributo sin importar valores */
+/* [href]{
+    border-bottom: 5px solid darkslateblue;
+}
+
+[lang]{
+    color: aqua;
+}
+ */
+
+ /* [href="#"] {
+    background-color: aquamarine;
+ }
+
+ [href*="you"] {
+    color: cadetblue;
+ }
+
+ [href$="mx"]{
+    background-color: darkslateblue;
+ }
+
+ [href^="https"] {
+    font-size: 25px;
+ }
+
+ [type="text"] {
+    color: blue;
+ }
+ */
+
+ #mp1 {
+    border-top: 3px solid tomato;
+    border-bottom: 5px solid tomato;
+ }
+
+#mp1 main{
+    background-color: darkslateblue;
+
+}
+
+#mp1 aside{
+    background-color: darkcyan;
+
+}
+
+#mp1 > footer{
+    background-color: darksalmon;
+}
+
+/* poner borde al pie de los articulos */
+#mp1 article > footer {
+    border: 5px double darkkhaki;
+}
+
+/* hermano general */
+#mp1 h2~article{
+    box-shadow: 5px 5px 5px palevioletred;
+}
+
+/* hermano adyacente */
+#mp1 h2 + article, #mp1 nav, [href="#"] {
+    border-top: 5px double palegreen;
 }
